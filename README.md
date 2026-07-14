@@ -122,8 +122,3 @@
 - RTT 統計分析
 - Linux Berkeley Socket 移植
 
----
-
-# License
-
-本專案為個人自主學習與課外實作成果，主要用於驗證電腦網路課程中 Reliable Data Transfer 與 Go-Back-N 協定的核心概念，歡迎作為學習與研究用途參考。
