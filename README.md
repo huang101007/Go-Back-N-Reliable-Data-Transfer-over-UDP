@@ -2,9 +2,9 @@
 
 ## 專案簡介
 
-本專案為電腦網路概論課程之外自主完成的Socket Programming實作，目的是在不可靠的 UDP(User Datagram Protocol）之上，從零開始實作 **Go-Back-N滑動視窗可靠傳輸協定**。
+本專案為電腦網路概論課程之外自主完成的Socket Programming實作，目的是在不可靠的UDP之上，從零開始實作 **Go-Back-N滑動視窗可靠傳輸協定**。
 
-課堂中雖然介紹了UDP、Reliable Data Transfer、Stop-and-Wait以及Go-Back-N等可靠傳輸機制，但大多停留在理論層面。為了真正理解每個演算法背後的運作方式，我選擇不依賴TCP已經實作好的可靠傳輸功能，而是在UDP Socket上自行設計封包格式、確認機制、逾時重傳流程與滑動視窗控制，完整重現Go-Back-N協定的核心概念。
+課堂中雖然介紹了UDP、Reliable Data Transfer、Stop-and-Wait以及Go-Back-N等可靠傳輸機制，但大多停留在理論層面。為了真正理解每個演算法背後的運作方式，我選擇不依賴TCP已經實作好的可靠傳輸功能，而是在UDP Socket上自行設計封包格式、確認機制、逾時重傳流程與滑動視窗控制，完整重現Go-Back-N協定的核心概念，順便複習段考。
 
 此外，本專案也加入Multi-threading架構，讓封包傳送與 ACK 接收可以同時進行，避免阻塞問題，更貼近實際網路程式的設計方式。
 
@@ -23,11 +23,11 @@
 - 為什麼Go-Back-N要重傳整個Window
 - UDP如何透過額外機制實現Reliable Data Transfer
 
-(上課學習的有限狀態機)
+上課學習的有限狀態機(基礎rdt)
 
 <img width="430" height="290" alt="螢幕擷取畫面 2026-07-04 222217" src="https://github.com/user-attachments/assets/98e3fbe9-265a-48be-9953-83c4986a24a3" />
 
-轉換成具體程式碼後的延伸實作
+自主實作轉換成具體程式碼後的延伸實作
 
 <img width="1912" height="1018" alt="螢幕擷取畫面 2026-07-04 220435" src="https://github.com/user-attachments/assets/d6c18b09-6475-4504-8f97-5867797aee0b" />
 
