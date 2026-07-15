@@ -29,7 +29,7 @@
 
 自主實作轉換成具體程式碼後的延伸實作
 
-<img width="1912" height="1018" alt="螢幕擷取畫面 2026-07-04 220435" src="https://github.com/user-attachments/assets/d6c18b09-6475-4504-8f97-5867797aee0b" />
+<img width="1272" height="555" alt="image" src="https://github.com/user-attachments/assets/dda675b3-58ed-4c43-bb67-148fe719fca4" />
 
 
 ---
