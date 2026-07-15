@@ -14,6 +14,7 @@
 
 在學習 UDP 與 RDT 機制後，我發現雖然能理解課堂投影片上的流程圖，但若沒有真正動手實作，很難完全理解可靠傳輸協定背後的設計理念。
 
+
 因此，我利用課餘時間，將 Go-Back-N 的演算法完整實作出來，希望透過程式驗證課堂中所學的每一個理論，包括：
 
 - Sliding Window如何控制封包流量
@@ -21,6 +22,15 @@
 - Timeout如何觸發重傳
 - 為什麼Go-Back-N要重傳整個Window
 - UDP如何透過額外機制實現Reliable Data Transfer
+
+(上課學習的有限狀態機)
+
+<img width="430" height="290" alt="螢幕擷取畫面 2026-07-04 222217" src="https://github.com/user-attachments/assets/98e3fbe9-265a-48be-9953-83c4986a24a3" />
+
+轉換成具體程式碼後的延伸實作
+
+<img width="1912" height="1018" alt="螢幕擷取畫面 2026-07-04 220435" src="https://github.com/user-attachments/assets/d6c18b09-6475-4504-8f97-5867797aee0b" />
+
 
 ---
 
